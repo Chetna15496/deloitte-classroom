@@ -13,10 +13,14 @@ public class MapExample {
 	trainees.put("Deepti","Vizag");
 	//System.out.println(trainees.get("Chetna"));
 	//System.out.println(trainees.get("Teju"));
-	System.out.println("Enter a name: ");
-	String name = new Scanner(System.in).nextLine();
-	System.out.println("Location: "+trainees.get(name));
-
+	
+	//System.out.println("Enter a name: ");
+	//String name = new Scanner(System.in).nextLine();
+	//System.out.println("Location: "+trainees.get(name));
+   //for(String key:trainees.keySet()) {
+    //	System.out.println("Name :"+key+"\tLocation: "+trainees.get(key));//follows hashcode so sorted in that way
+    trainees.forEach((k,v)->System.out.println("Name: "+k+"\tLocation:"+v));
+	}
 	}
 
-}
+
