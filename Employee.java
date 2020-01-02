@@ -1,23 +1,20 @@
 package com.deloitte;
 
-public class Employee {
-	private int empId;
-	private String empName;
-	private float salary;
+import java.io.Serializable;
+
+public class Employee implements Serializable {
+	 int empId;
+	 String empName;
+	 double salary;
+	 
+	 public Employee() {}
 	
-	public Employee() {}
-
-	public Employee(int empId, String empName, float salary) {
-		super();
-		this.empId = empId;
-		this.empName = empName;
-		this.salary = salary;
-	}
-
+	
 
 	public int getEmpId() {
 		return empId;
 	}
+
 
 
 	public void setEmpId(int empId) {
@@ -25,9 +22,11 @@ public class Employee {
 	}
 
 
+
 	public String getEmpName() {
 		return empName;
 	}
+
 
 
 	public void setEmpName(String empName) {
@@ -35,18 +34,35 @@ public class Employee {
 	}
 
 
-	public float getSalary() {
+
+	public double getSalary() {
 		return salary;
 	}
 
 
-	public void setSalary(float salary) {
+
+	public void setSalary(double salary) {
 		this.salary = salary;
 	}
 
 
-	public static void main(String[] args) {
-	
+
+	public Employee(int empId, String empName, double salary) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.salary = salary;
 	}
+   
+
+
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + ", salary=" + salary + "]";
+	}
+
+
+
+	
 
 }
