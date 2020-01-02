@@ -8,6 +8,7 @@ public class FileOperationDemo1
 		
 	try {
 		File file=new File("hello.txt");
+		//File file=new File("can give path");
 		//FileInputStream fin=new FileInputStream(file);//byte stream
 		FileReader fin=new FileReader(file);//Character stream
 		int c;
