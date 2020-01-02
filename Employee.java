@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Employee implements Serializable {
 	 int empId;
 	 String empName;
-	 double salary;
+	 transient double salary;//transient will suppress the value of this variable i.e it will not be serialized.
 	 
 	 public Employee() {}
 	
