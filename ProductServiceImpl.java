@@ -22,26 +22,25 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public boolean deleteProduct(Product product) throws Exception {
-		// TODO Auto-generated method stub
-		return false;
+		return repo.deleteProduct(product);
+		
 	}
 
 	@Override
 	public boolean updateProduct(Product product) throws Exception {
-		// TODO Auto-generated method stub
-		return false;
+		return repo.updateProduct(product);
+		
 	}
 
 	@Override
 	public Product getProductById(int productId) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return repo.getProductById(productId);
 	}
 
 	@Override
 	public List<Product> getAllProducts() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+	 return repo.getAllProducts();
 	}
 
 	@Override
