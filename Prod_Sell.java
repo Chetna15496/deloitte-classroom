@@ -26,8 +26,8 @@ public class Prod_Sell {
 //		prod.getSellr().add(sellr2);
 		         Session ssn=sf.openSession();
 		         Transaction tx= ssn.beginTransaction();
-		     //    ssn.save(sellr);
-		      //   ssn.save(prod);
+		       ssn.save(sellr);
+		        ssn.save(prod);
 		         tx.commit();
 		         ssn.close();
 		         
