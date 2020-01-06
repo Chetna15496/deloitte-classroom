@@ -2,12 +2,13 @@ package com.deloitte.emp;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 
 @Entity
-@DiscriminatorValue("System Engg")
+
+//@DiscriminatorValue("System Engg")
 public class SysEngg extends Employee {
 	//@Id
+	//@PrimaryKeyJoinColumn(foreignKey=)
 	//private int setId;
 	private String lang;
 	private String devProfile;
