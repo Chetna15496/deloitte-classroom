@@ -2,9 +2,10 @@ package com.deloitte.emp;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 @Entity
-@DiscriminatorValue("Testing Engg")
+@NamedQuery(name="byTestTech", query="from DelConsult where testtech=:tech")
+//@DiscriminatorValue("Testing Engg")
 
 public class DelConsult extends Employee {
 //@Id

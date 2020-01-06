@@ -4,10 +4,12 @@ import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 
 @Entity
-@Inheritance
-@DiscriminatorColumn(name="Job_role")
+@Inheritance(strategy=InheritanceType.JOINED)
+//@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
+//@DiscriminatorColumn(name="Job_role")
 public class Employee {
 @Id
 private int empId;
